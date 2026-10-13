@@ -13,10 +13,9 @@ pip install mavsdk aioconsole
 
 sudo usermod -aG docker $(id -un)
 
-sudo usermod -aG dialout "$(id -un)"
+sudo usermod -aG dialout $USER
 
-# stop and mask the ModemManager
-sudo systemctl mask --now ModemManager.service
+sudo apt-get -y remove modemmanager
 
 sudo apt install -y libfuse2 libxcb-xinerama0 libxkbcommon-x11-0 libxcb-cursor0
 

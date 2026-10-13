@@ -1,5 +1,7 @@
 
 https://hub.docker.com/r/px4io/px4-sitl-gazebo
+    docker run --rm -it --network host px4io/px4-sitl-gazebo:latest
+
 https://mavsdk.mavlink.io/main/en/python/quickstart.html
 
 
